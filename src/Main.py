@@ -11,5 +11,9 @@ df.reset_index(inplace=True)
 
 df = df.drop(['index', 'message'], axis=1)
 
-fig = px.scatter_geo(df, lat='latitude', lon='longitude')
-fig.show()
+def main():
+  fig = px.scatter_geo(df, lat='latitude', lon='longitude')
+  fig.show()
+
+if __name__ == 'main':
+  main()
