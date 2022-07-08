@@ -15,5 +15,5 @@ def main():
   fig = px.scatter_geo(df, lat='latitude', lon='longitude')
   fig.show()
 
-if __name__ == 'main':
+if __name__ == '__main__':
   main()
